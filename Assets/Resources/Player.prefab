@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3856011571749504806}
   - component: {fileID: 3856011571749504807}
   - component: {fileID: 3856011571749504856}
-  - component: {fileID: 3856011571749504804}
+  - component: {fileID: 8167369827490300324}
   - component: {fileID: 3856011571749504805}
   m_Layer: 0
   m_Name: Player
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3856011571749504858}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5691973279444189000, guid: bf16436f2e121c6419787e061162f094, type: 3}
+  m_Sprite: {fileID: 3746935655882810301, guid: 6acc3cc9a4173b644bb11df9d60a0818, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -108,8 +108,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &3856011571749504804
-CapsuleCollider2D:
+--- !u!58 &8167369827490300324
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -117,13 +117,13 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 3856011571749504858}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 841a8e4537d30df42b052870198c6af0, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.03, y: 0.5}
-  m_Size: {x: 0.55, y: 1}
-  m_Direction: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!114 &3856011571749504805
 MonoBehaviour:
   m_ObjectHideFlags: 0

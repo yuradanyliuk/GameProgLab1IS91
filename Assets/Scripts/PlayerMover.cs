@@ -9,7 +9,7 @@ public class PlayerMover : MonoBehaviour
     
     private Rigidbody2D _rigidbody;
     private Vector2 _movingForce;
-    private Vector2 _jumpForce;
+    private Vector2 _jumpForce = Vector2.zero;
     private bool _needToJump;
     #endregion
     
@@ -17,7 +17,7 @@ public class PlayerMover : MonoBehaviour
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
-        _jumpForce = new Vector2(0f, jumpPower);
+        _jumpForce.y = jumpPower;
     }
     private void Update()
     {
